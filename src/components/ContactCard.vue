@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useWindowSize } from '@vueuse/core'
 import {
   IconPhone,
@@ -8,11 +9,15 @@ import {
   IconBrandGithub
 } from '@tabler/icons-vue'
 
-const { width } = useWindowSize()
+const { width, height } = useWindowSize()
+const isMobile = computed(() => width.value < height.value)
 </script>
 
 <template>
-  <div class="card min-w-fit w-full h-fit bg-base-300 mx-auto text-lg mt-3">
+  <div
+    class="card min-w-fit w-full h-fit bg-base-300 mx-auto mt-3"
+    :class="{ 'text-lg': !isMobile }"
+  >
     <div class="card-body items-center text-center">
       <h2 class="card-title text-2xl mb-2">
         <IconAddressBook class="w-8 h-8 text-red-700 stroke-2" />Contacto

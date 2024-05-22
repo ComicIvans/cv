@@ -17,7 +17,7 @@ import jokes from '@/assets/jokes.json'
 import ContactCard from '@/components/ContactCard.vue'
 import DescriptionCard from '@/components/DescriptionCard.vue'
 import ProfessionalTimeline from '@/components/ProfessionalTimeline.vue'
-import EventRecord from '@/components/EventRecord.vue'
+import EventsRecord from '@/components/EventsRecord.vue'
 
 const movex = ref(true)
 const menuOpened = ref(false)
@@ -143,7 +143,7 @@ onMounted(() => {
           <ContactCard v-if="activeTab == 'Sobre mí'" />
           <DescriptionCard v-if="activeTab == 'Sobre mí'" />
           <ProfessionalTimeline v-if="activeTab == 'Representación y eventos'" />
-          <EventRecord v-if="activeTab == 'Representación y eventos'" />
+          <EventsRecord v-if="activeTab == 'Representación y eventos'" />
         </div>
       </div>
     </main>
