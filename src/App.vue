@@ -19,7 +19,7 @@ import DescriptionCard from '@/components/DescriptionCard.vue'
 import ProfessionalTimeline from '@/components/ProfessionalTimeline.vue'
 import EventRecord from '@/components/EventRecord.vue'
 
-const move_x = ref(true)
+const movex = ref(true)
 const menuOpened = ref(false)
 const tabs = [
   { name: 'Sobre mí', icon: IconUser },
@@ -37,14 +37,14 @@ const newJoke = () => {
 
 onMounted(() => {
   setTimeout(() => {
-    move_x.value = false
+    movex.value = false
   }, 500)
 })
 </script>
 
 <template>
-  <div class="min-w-screen min-h-screen flex flex-col">
-    <main class="bg-base-200 flex-grow">
+  <div class="min-w-screen min-h-screen flex flex-col bg-base-200">
+    <main class="flex-grow">
       <dialog id="joke" class="modal">
         <div class="modal-box">
           <h3 class="font-bold text-lg">También soy un chistoso</h3>
@@ -55,11 +55,11 @@ onMounted(() => {
         </form>
       </dialog>
       <div class="w-11/12 mx-auto p-6" v-auto-animate>
-        <div v-if="move_x" class="mt-36 opacity-0 transition-opacity duration-500"></div>
+        <div v-if="movex" class="mt-36 opacity-0 transition-opacity duration-500"></div>
         <header
           class="text-center mb-8 opacity-0 transition-opacity duration-500"
           :class="{
-            'opacity-100': !move_x,
+            'opacity-100': !movex,
             'text-center': isMobile,
             'flex flex-row items-center': !isMobile
           }"
@@ -134,11 +134,11 @@ onMounted(() => {
         </header>
         <div
           class="divider opacity-0 transition-opacity duration-500"
-          :class="{ 'opacity-100': !move_x }"
+          :class="{ 'opacity-100': !movex }"
         ></div>
         <div
           class="grid gap-8 opacity-0 transition-opacity duration-500"
-          :class="{ 'opacity-100': !move_x, 'grid-cols-1': isMobile, 'grid-cols-2': !isMobile }"
+          :class="{ 'opacity-100': !movex, 'grid-cols-1': isMobile, 'grid-cols-2': !isMobile }"
         >
           <ContactCard v-if="activeTab == 'Sobre mí'" />
           <DescriptionCard v-if="activeTab == 'Sobre mí'" />
@@ -147,7 +147,10 @@ onMounted(() => {
         </div>
       </div>
     </main>
-    <footer class="footer items-center p-4 bg-base-300">
+    <footer
+      class="footer items-center p-4 bg-base-300 opacity-0 transition-opacity duration-500"
+      :class="{ 'opacity-100': !movex }"
+    >
       <aside class="items-center grid-flow-col">
         <IconCopyright class="w-6 h-6" />
         <p>
