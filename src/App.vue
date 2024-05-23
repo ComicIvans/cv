@@ -27,7 +27,7 @@ const tabs = [
 ]
 const activeTab = ref('Sobre mí')
 const { width, height } = useWindowSize()
-const isMobile = computed(() => width.value < height.value)
+const isMobile = computed(() => width.value < height.value || width.value < 768)
 const currJoke = ref('')
 const newJoke = () => {
   currJoke.value = jokes[Math.floor(Math.random() * jokes.length)]
@@ -142,8 +142,8 @@ onMounted(() => {
             class="flex items-start gap-8"
             :class="{ 'flex-col': isMobile, 'flex-row': !isMobile }"
           >
-            <ProfessionalTimeline />
-            <EventsRecord />
+            <ProfessionalTimeline :is-mobile="isMobile" />
+            <EventsRecord :is-mobile="isMobile" />
           </div>
           <div
             v-if="activeTab == 'Certificaciones y conocimientos'"

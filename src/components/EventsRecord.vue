@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { IconCalendarEvent } from '@tabler/icons-vue'
-import { useWindowSize } from '@vueuse/core'
 
-const { width, height } = useWindowSize()
-const isMobile = computed(() => width.value < height.value)
+defineProps<{
+  isMobile: boolean
+}>()
 </script>
 
 <template>
