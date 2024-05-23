@@ -6,7 +6,6 @@ import {
   IconUser,
   IconSchool,
   IconBuildingBank,
-  IconCertificate,
   IconCopyright,
   IconBrandInstagram,
   IconBrandX,
@@ -15,7 +14,7 @@ import {
 import { useWindowSize } from '@vueuse/core'
 import jokes from '@/assets/jokes.json'
 import ContactCard from '@/components/ContactCard.vue'
-import DescriptionCard from '@/components/DescriptionCard.vue'
+import DescriptionHero from '@/components/DescriptionHero.vue'
 import ProfessionalTimeline from '@/components/ProfessionalTimeline.vue'
 import EventsRecord from '@/components/EventsRecord.vue'
 
@@ -23,9 +22,8 @@ const movex = ref(true)
 const menuOpened = ref(false)
 const tabs = [
   { name: 'Sobre mí', icon: IconUser },
-  { name: 'Estudios y conocimientos', icon: IconSchool },
-  { name: 'Representación y eventos', icon: IconBuildingBank },
-  { name: 'Certificaciones y otros', icon: IconCertificate }
+  { name: 'Certificaciones y conocimientos', icon: IconSchool },
+  { name: 'Representación y eventos', icon: IconBuildingBank }
 ]
 const activeTab = ref('Sobre mí')
 const { width, height } = useWindowSize()
@@ -74,7 +72,7 @@ onMounted(() => {
           </button>
           <div class="mx-auto" v-if="!isMobile">
             <ul
-              :class="width > 1400 ? 'menu-horizontal' : 'menu-vertical'"
+              :class="width > 1300 ? 'menu-horizontal' : 'menu-vertical'"
               class="menu bg-base-200 rounded-box border-2 border-base-300"
             >
               <li v-for="(tab, index) in tabs" :key="index">
@@ -132,18 +130,28 @@ onMounted(() => {
             </ul>
           </div>
         </header>
-        <div
-          class="divider opacity-0 transition-opacity duration-500"
-          :class="{ 'opacity-100': !movex }"
-        ></div>
-        <div
-          class="grid gap-8 opacity-0 transition-opacity duration-500"
-          :class="{ 'opacity-100': !movex, 'grid-cols-1': isMobile, 'grid-cols-2': !isMobile }"
-        >
-          <ContactCard v-if="activeTab == 'Sobre mí'" />
-          <DescriptionCard v-if="activeTab == 'Sobre mí'" />
-          <ProfessionalTimeline v-if="activeTab == 'Representación y eventos'" />
-          <EventsRecord v-if="activeTab == 'Representación y eventos'" />
+        <div class="opacity-0 transition-opacity duration-500" :class="{ 'opacity-100': !movex }">
+          <div class="divider"></div>
+
+          <div v-if="activeTab == 'Sobre mí'" class="flex flex-col lg:flex-row items-center gap-8">
+            <ContactCard />
+            <DescriptionHero />
+          </div>
+          <div
+            v-if="activeTab == 'Representación y eventos'"
+            class="flex items-start gap-8"
+            :class="{ 'flex-col': isMobile, 'flex-row': !isMobile }"
+          >
+            <ProfessionalTimeline />
+            <EventsRecord />
+          </div>
+          <div
+            v-if="activeTab == 'Certificaciones y conocimientos'"
+            class="flex items-start gap-8"
+            :class="{ 'flex-col': isMobile, 'flex-row': !isMobile }"
+          >
+            En elaboración...
+          </div>
         </div>
       </div>
     </main>
