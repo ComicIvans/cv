@@ -9,11 +9,7 @@ import {
   IconCopyright,
   IconBrandInstagram,
   IconBrandX,
-  IconBrandGithub,
-  IconCertificate,
-  IconChevronRight,
-  IconDeviceDesktop,
-  IconCode
+  IconBrandGithub
 } from '@tabler/icons-vue'
 import { useWindowSize } from '@vueuse/core'
 import jokes from '@/assets/jokes.json'
