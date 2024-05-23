@@ -77,7 +77,7 @@ onMounted(() => {
           <div class="mx-auto" v-if="!isMobile">
             <ul
               :class="width > 1300 ? 'menu-horizontal' : 'menu-vertical'"
-              class="menu bg-base-200 rounded-box border-2 border-base-300"
+              class="menu gap-2 bg-base-200 rounded-box border-2 border-base-300"
             >
               <li v-for="(tab, index) in tabs" :key="index">
                 <a
@@ -101,7 +101,7 @@ onMounted(() => {
           <div class="mx-auto" v-if="isMobile" v-auto-animate>
             <ul
               v-if="menuOpened"
-              class="menu menu-vertical bg-base-200 rounded-box w-fit mx-auto mt-4 border-2 border-base-300"
+              class="menu menu-vertical gap-1 bg-base-200 rounded-box w-fit mx-auto mt-4 border-2 border-base-300"
             >
               <li>
                 <a @click="menuOpened = false" class="justify-between"
