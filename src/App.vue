@@ -9,7 +9,11 @@ import {
   IconCopyright,
   IconBrandInstagram,
   IconBrandX,
-  IconBrandGithub
+  IconBrandGithub,
+  IconCertificate,
+  IconChevronRight,
+  IconDeviceDesktop,
+  IconCode
 } from '@tabler/icons-vue'
 import { useWindowSize } from '@vueuse/core'
 import jokes from '@/assets/jokes.json'
@@ -17,6 +21,10 @@ import ContactCard from '@/components/ContactCard.vue'
 import DescriptionHero from '@/components/DescriptionHero.vue'
 import ProfessionalTimeline from '@/components/ProfessionalTimeline.vue'
 import EventsRecord from '@/components/EventsRecord.vue'
+import SkillsCard from '@/components/SkillsCard.vue'
+import ProjectsCard from '@/components/ProjectsCard.vue'
+import CertificatesCard from '@/components/CertificatesCard.vue'
+import AdditionalInfoCard from '@/components/AdditionalInfoCard.vue'
 
 const movex = ref(true)
 const menuOpened = ref(false)
@@ -27,7 +35,7 @@ const tabs = [
 ]
 const activeTab = ref('Sobre mí')
 const { width, height } = useWindowSize()
-const isMobile = computed(() => width.value < height.value || width.value < 768)
+const isMobile = computed(() => width.value < height.value || width.value < 868)
 const currJoke = ref('')
 const newJoke = () => {
   currJoke.value = jokes[Math.floor(Math.random() * jokes.length)]
@@ -142,15 +150,23 @@ onMounted(() => {
             class="flex items-start gap-8"
             :class="{ 'flex-col': isMobile, 'flex-row': !isMobile }"
           >
-            <ProfessionalTimeline :is-mobile="isMobile" />
-            <EventsRecord :is-mobile="isMobile" />
+            <ProfessionalTimeline class="flex-1" :is-mobile="isMobile" />
+            <EventsRecord class="flex-1" :is-mobile="isMobile" />
           </div>
           <div
             v-if="activeTab == 'Certificaciones y conocimientos'"
-            class="flex items-start gap-8"
-            :class="{ 'flex-col': isMobile, 'flex-row': !isMobile }"
+            class="flex justify-between gap-8"
+            :class="{
+              'flex-col items-center': isMobile || width < 1300,
+              'flex-row items-start': !isMobile || width >= 1300
+            }"
           >
-            En elaboración...
+            <SkillsCard :is-mobile="isMobile" />
+            <ProjectsCard :is-mobile="isMobile" />
+            <div class="flex flex-col gap-8">
+              <CertificatesCard :is-mobile="isMobile" :showLarge="!isMobile && width < 1300" />
+              <AdditionalInfoCard :is-mobile="isMobile" :showLarge="!isMobile && width < 1300" />
+            </div>
           </div>
         </div>
       </div>

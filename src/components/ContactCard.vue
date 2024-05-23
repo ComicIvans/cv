@@ -25,6 +25,7 @@ const isMobile = computed(() => width.value < height.value)
           href="https://www.linkedin.com/in/comicivans/"
           ><IconBrandLinkedin class="w-8 h-8 text-red-700 stroke-2 mr-2" />Iván Salido Cobo</a
         >
+        <i>Disponibilidad completa</i>
       </div>
     </div>
   </div>
