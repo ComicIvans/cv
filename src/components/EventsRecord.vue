@@ -145,7 +145,8 @@ defineProps<{
           <div class="text-lg font-black">XXVI ENEM</div>
           Soy Tesorero y Secretario del Comité Organizador del XXVI Encuentro Nacional de
           Estudiantes de Matemáticas (ENEM), que reúne todos los años a más de 200 estudiantes de
-          matemáticas de toda España.
+          matemáticas de toda España para tratar temas relacionados con las matemáticas, estadística
+          y ciencia de datos.
         </div>
       </li>
     </ul>

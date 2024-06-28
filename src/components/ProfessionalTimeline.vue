@@ -34,8 +34,8 @@ defineProps<{
         <div :class="{ 'text-end': !isMobile }" class="timeline-start mb-10">
           <time class="italic">Diciembre de 2020</time>
           <div class="text-lg font-black">Inicio como miembro</div>
-          Comencé mis peripecias como miembro de pleno derecho en el Claustro Universitairo, en mi
-          MORE, la Delegación General de Estudiantes (DGE), y, por consiguiente, en la Delegación de
+          Comencé mi trayectoria como miembro de pleno derecho en el Claustro Universitairo, en la
+          Delegación General de Estudiantes (DGE), y, por consiguiente, en la Delegación de
           Estudiantes de la Facultad de Ciencias (DEFC). En esta fecha también pasé a ser
           <b>Tesorero de la DGE</b> y <b>Secretario de la DEFC</b>.
         </div>
@@ -122,8 +122,8 @@ defineProps<{
         <hr class="bg-primary" />
       </li>
       <li>
-        <hr />
-        <div class="timeline-middle">
+        <hr class="bg-primary" />
+        <div class="timeline-middle text-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -140,10 +140,12 @@ defineProps<{
         <div :class="{ 'text-end': !isMobile }" class="timeline-start mb-10">
           <time class="italic">Junio de 2024</time>
           <div class="text-lg font-black">Vocal de Digitalización y Transparencia</div>
-          La Vocalía que pretendo ocupar es la de Digitalización y Transparencia, en la que
-          trabajaré por mantener la transparencia de la web de la CREUP y por mejorar su
-          funcionamiento. Además, me gustaría trabajar en mejorar la intranet para añadir
-          funcionalidades y mejorar su aspecto.
+          He sido elegido para formar parte de la Comisión Ejecutiva Ampliada de la Coordinadora de
+          Representantes de Estudiantes de Universidades Públicas (CREUP) como Vocal de
+          Digitalización y Transparencia. En este cargo, me estoy encargando de mantener su página
+          web, su dominio y subdominios, su Google Workspace y las herramientas informáticas de las
+          que dispone, tales como una intranet desde la cual se gestionan inscripciones a eventos,
+          facturas y votaciones secretas además de sus correspondientes bases de datos.
         </div>
       </li>
     </ul>

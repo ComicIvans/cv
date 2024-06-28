@@ -17,8 +17,15 @@
         <h2 class="text-2xl font-bold text-red-700 py-6">Estudios</h2>
         <p class="pb-6">
           Me encuentro finalizando el Grado en Matemáticas por la <b>Universidad de Granada</b>.
-          Comencé mis estudios en septiembre de 2019 y acutalmente me quedan créditos 12 ECTS y el
-          TFG (12 créditos ECTS).
+          Comencé mis estudios en septiembre de 2019 y los finalizaré en este curso.
+        </p>
+        <p class="pb-6">
+          Durante el mes de julio de 2024 estaré realizando un curso de Inglés C1 del
+          <b
+            ><a href="https://clm-granada.com/" class="link link-hover"
+              >Centro de Lenguas Modernas</a
+            ></b
+          >.
         </p>
       </div>
     </div>

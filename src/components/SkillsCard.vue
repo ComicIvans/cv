@@ -24,8 +24,8 @@ defineProps<{
         <div class="flex flex-row mr-2">
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
           <p>
-            <b>Python:</b> He hecho varios scripts y mi TFG consiste en hacer un paquete con una
-            interfaz de línea de comandos.
+            <b>Python:</b> He hecho varios scripts y mi TFG ha consistido en hacer un paquete con un
+            programa de línea de comandos.
           </p>
         </div>
         <div class="flex flex-row mr-2">
@@ -58,15 +58,31 @@ defineProps<{
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
           <p>
             <b>WordPress:</b> He trabajado con WordPress en la página de la asociación
-            <a class="link link-hover" href="https://amatugr.es/">AMAT</a>.
+            <a class="link link-hover" href="https://amatugr.es/">AMAT</a> y actualmente trabajo con
+            él en la página de la asociación
+            <a class="link link-hover" href="https://creup.es/">CREUP</a>.
           </p>
         </div>
         <div class="flex flex-row mr-2">
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
           <p>
-            <b>Google Workspace y Analytics:</b> He trabajado con el Google Workspace de la
-            asociación <a class="link link-hover" href="https://amatugr.es/">AMAT</a> y con las
-            anlíticas de la DEFC y la DGE.
+            <b>Google Workspace y Analytics:</b> He trabajado con Google Workspace en la asociación
+            <a class="link link-hover" href="https://amatugr.es/">AMAT</a> y en la
+            <a class="link link-hover" href="https://creup.es/">CREUP</a> y con las anlíticas de la
+            DEFC y la DGE.
+          </p>
+        </div>
+        <div class="flex flex-row mr-2">
+          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
+          <p>
+            <b>Drupal:</b> Desde 2020 he mantenido las páginas web de la
+            <a class="link link-hover" href="https://defc.ugr.es/"
+              >Delegación de Estudiantes de la Facultad de Ciencias</a
+            >
+            y de la
+            <a class="link link-hover" href="https://dge.ugr.es/"
+              >Delegación General de Estudiantes</a
+            >.
           </p>
         </div>
       </div>
