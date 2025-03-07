@@ -38,9 +38,11 @@ defineProps<{
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
           <p>Universidad de Extremadura (2023)</p>
         </div>
-        <p class="my-2">
-          Además, estoy inscrito para asistir al que se organiza este año en Madrid.
-        </p>
+        <div class="flex flex-row mr-2">
+          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
+          <p>Universidades Politécnica y Complutense de Madrid (2024)</p>
+        </div>
+        <p class="my-2">Además, soy <b>organizador</b> del que se celebrará este año en Granada.</p>
         <p>
           Dichos congresos se desarrollan a lo largo de una semana, <b>de lunes a sábado</b>, y a lo
           largo del día se realizan varias <b>charlas y ponencias</b> relacionadas con las

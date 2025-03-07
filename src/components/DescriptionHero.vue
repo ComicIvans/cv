@@ -16,16 +16,12 @@
         </p>
         <h2 class="text-2xl font-bold text-red-700 py-6">Estudios</h2>
         <p class="pb-6">
-          Me encuentro finalizando el Grado en Matemáticas por la <b>Universidad de Granada</b>.
-          Comencé mis estudios en septiembre de 2019 y los finalizaré en este curso.
+          Soy Graduado en Matemáticas por la <b>Universidad de Granada</b>. Comencé mis estudios en
+          septiembre de 2019 y los finalicé en julio de 2024.
         </p>
         <p class="pb-6">
-          Durante el mes de julio de 2024 estaré realizando un curso de Inglés C1 del
-          <b
-            ><a href="https://clm-granada.com/" class="link link-hover"
-              >Centro de Lenguas Modernas</a
-            ></b
-          >.
+          Actualmente me encuentro cursando el Máster de Formación Permanente en Ciberseguridad en
+          la Universidad de Granada.
         </p>
       </div>
     </div>
