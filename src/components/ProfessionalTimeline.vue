@@ -64,7 +64,8 @@ defineProps<{
           Secretario y Tesorero tras dos años de de intenso trabajo y dedicación. Aun así, seguí
           como miembro en el siguiente mandato, el actual, ya que el mandato del Claustro
           Universitario es de cuatro años. Esto me permitió entrar en ese mismo mes al
-          <b>Consejo de Gobierno</b>, donde todavía sigo.
+          <b>Consejo de Gobierno</b>, donde he sido miembro y participado en sus comisiones hasta
+          julio de 2024.
         </div>
         <hr class="bg-primary" />
       </li>
@@ -91,7 +92,7 @@ defineProps<{
           de Relaciones Externas, el cual asumí por mi experiencia en la gestión de los viajes y el
           contacto con otras entidades. En este cargo, he podido incrementar la participación de la
           DGE en eventos y reuniones externas así como afianzar su presencia en el panorama
-          nacional.
+          nacional. Finalicé el mandato en diciembe de 2024.
         </div>
         <hr class="bg-primary" />
       </li>
@@ -117,7 +118,8 @@ defineProps<{
           Cuando hubo que presentar un nuevo equipo para la Comisión Permanente de la DGE, decidí
           formar parte de este como Vicecoordinador Académico, cargo que me ha permitido contribuir
           de manera directa a la mejora de la calidad de la docencia y la adquisición de nuevas
-          garantías y derechos para la evaluación del estudiantado.
+          garantías y derechos para la evaluación del estudiantado. Finalicé el mandato en diciembe
+          de 2024.
         </div>
         <hr class="bg-primary" />
       </li>
@@ -140,12 +142,11 @@ defineProps<{
         <div :class="{ 'text-end': !isMobile }" class="timeline-start mb-10">
           <time class="italic">Junio de 2024</time>
           <div class="text-lg font-black">Vocal de Digitalización y Transparencia</div>
-          He sido elegido para formar parte de la Comisión Ejecutiva Ampliada de la Coordinadora de
+          Actualmente formo parte de la Comisión Ejecutiva Ampliada de la Coordinadora de
           Representantes de Estudiantes de Universidades Públicas (CREUP) como Vocal de
-          Digitalización y Transparencia. En este cargo, me estoy encargando de mantener su página
-          web, su dominio y subdominios, su Google Workspace y las herramientas informáticas de las
-          que dispone, tales como una intranet desde la cual se gestionan inscripciones a eventos,
-          facturas y votaciones secretas además de sus correspondientes bases de datos.
+          Digitalización y Transparencia. En este cargo, me estoy encargando de mantener toda la
+          infraestrucutra informática de la asociación, así como sus políticas de seguridad,
+          privacidad y protección de datos.
         </div>
       </li>
     </ul>

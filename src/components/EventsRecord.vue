@@ -101,7 +101,7 @@ defineProps<{
       </li>
       <li>
         <hr />
-        <div class="timeline-middle">
+        <div class="timeline-middle text-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -118,11 +118,11 @@ defineProps<{
         <div class="timeline-end mb-10">
           <time class="italic">Noviembre de 2024</time>
           <div class="text-lg font-black">LXXVI AGO de CREUP</div>
-          Actualmente soy uno de los organizadores de la próxima asamblea general ordinaria de la
-          CREUP. Estoy coordinando las reservas de espacios y contactos con los diferentes órganos
-          implicados. Próximamente me encargaré también de la gestión económica del evento.
+          He sido el principal organizador de la 77.ª Asamblea General Ordinaria de CREUP,
+          coordinando las reservas de espacios y contactos con los diferentes órganos implicados.
+          Además, me encargué de la gestión económica del evento y la búsqueda de financiación.
         </div>
-        <hr />
+        <hr class="bg-primary" />
       </li>
       <li>
         <hr />
@@ -144,9 +144,10 @@ defineProps<{
           <time class="italic">Julio de 2025</time>
           <div class="text-lg font-black">XXVI ENEM</div>
           Soy Tesorero y Secretario del Comité Organizador del XXVI Encuentro Nacional de
-          Estudiantes de Matemáticas (ENEM), que reúne todos los años a más de 200 estudiantes de
-          matemáticas de toda España para tratar temas relacionados con las matemáticas, estadística
-          y ciencia de datos.
+          Estudiantes de Matemáticas (ENEM), que reúne todos los años a cientos de estudiantes de
+          Matemáticas, Estadística y Ciencia de Datos de toda España. Estos encuentros cuentan con
+          un enfoque tanto académico como profesional, permitiendo el contacto directo con empresas
+          del sector.
         </div>
       </li>
     </ul>

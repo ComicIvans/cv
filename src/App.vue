@@ -8,7 +8,7 @@ import {
   IconBuildingBank,
   IconCopyright,
   IconBrandInstagram,
-  IconBrandX,
+  IconBrandLinkedin,
   IconBrandGithub
 } from '@tabler/icons-vue'
 import { useWindowSize } from '@vueuse/core'
@@ -96,7 +96,7 @@ onMounted(() => {
           </div>
           <div class="flex flex-col itmes-center" :class="{ 'text-right': !isMobile }">
             <h1 class="text-4xl font-bold mt-4 text-red-700">Iván Salido Cobo</h1>
-            <p class="text-xl text-gray-600">Graduado en Matemáticas</p>
+            <p class="text-xl text-gray-600">Matemático y máster en Ciberseguridad</p>
           </div>
           <div class="mx-auto" v-if="isMobile" v-auto-animate>
             <ul
@@ -157,11 +157,11 @@ onMounted(() => {
               'flex-row items-start': !isMobile || width >= 1300
             }"
           >
-            <SkillsCard :is-mobile="isMobile" />
-            <ProjectsCard :is-mobile="isMobile" />
+            <SkillsCard :is-mobile="isMobile" :showLarge="!isMobile && width > 1300" />
+            <AdditionalInfoCard :is-mobile="isMobile" :showLarge="!isMobile && width > 1300" />
             <div class="flex flex-col gap-8">
-              <CertificatesCard :is-mobile="isMobile" :showLarge="!isMobile && width < 1300" />
-              <AdditionalInfoCard :is-mobile="isMobile" :showLarge="!isMobile && width < 1300" />
+              <CertificatesCard :is-mobile="isMobile" :showLarge="!isMobile && width > 1300" />
+              <ProjectsCard :is-mobile="isMobile" :showLarge="!isMobile && width > 1300" />
             </div>
           </div>
         </div>
@@ -179,11 +179,11 @@ onMounted(() => {
         </p>
       </aside>
       <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <a class="link link-hover" href="https://www.instagram.com/comic.ivans/"
-          ><IconBrandInstagram class="w-8 h-8"
+        <a class="link link-hover" href="https://www.linkedin.com/in/ivansalidocobo/"
+          ><IconBrandLinkedin class="w-8 h-8"
         /></a>
-        <a class="link link-hover" href="https://x.com/comic_ivans"
-          ><IconBrandX class="w-8 h-8"
+        <a class="link link-hover" href="https://www.instagram.com/ivansalidocobo/"
+          ><IconBrandInstagram class="w-8 h-8"
         /></a>
         <a class="link link-hover" href="https://github.com/ComicIvans/"
           ><IconBrandGithub class="w-8 h-8"

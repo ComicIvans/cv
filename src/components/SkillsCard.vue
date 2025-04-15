@@ -3,15 +3,40 @@ import { IconDeviceDesktop, IconChevronRight } from '@tabler/icons-vue'
 
 defineProps<{
   isMobile: boolean
+  showLarge: boolean
 }>()
 </script>
 
 <template>
-  <div class="card bg-base-100 shadow-xl" :class="isMobile ? 'w-96' : 'w-[30rem]'">
+  <div class="card bg-base-100 shadow-xl" :class="showLarge ? 'w-[30rem]' : 'w-[24rem]'">
     <div class="card-body">
       <h2 class="card-title flex flex-row items-center">
-        <IconDeviceDesktop class="w-6 h-6 stroke-2 text-red-700" />Conocimientos informáticos
+        <IconDeviceDesktop class="w-6 h-6 stroke-2 text-red-700" />Conocimientos académicos
       </h2>
+      <h3 class="text-lg font-bold text-red-700">Ciberseguridad</h3>
+      <div class="flex flex-col">
+        <div class="flex flex-row mr-2">
+          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
+          <p>
+            <b>Gestión de la ciberseguridad:</b> Coordinación de políticas, procesos y herramientas
+            para proteger activos digitales.
+          </p>
+        </div>
+        <div class="flex flex-row mr-2">
+          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
+          <p>
+            <b>Complimiento legislativo:</b> Aplicación de normativas y estándares en materia de
+            protección de datos y seguridad.
+          </p>
+        </div>
+        <div class="flex flex-row mr-2">
+          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
+          <p>
+            <b>Diseño y securización de infraestructuras:</b> Planificación y refuerzo de sistemas y
+            redes frente a amenazas.
+          </p>
+        </div>
+      </div>
       <h3 class="text-lg font-bold text-red-700">Lenguajes manejados</h3>
       <div class="flex flex-col">
         <div class="flex flex-row mr-2">
@@ -24,17 +49,16 @@ defineProps<{
         <div class="flex flex-row mr-2">
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
           <p>
-            <b>Python:</b> He hecho varios scripts y mi TFG ha consistido en hacer un paquete con un
-            programa de línea de comandos.
+            <b>Python:</b> He hecho varios scripts y tanto mi TFG ha consistido en hacer un paquete.
           </p>
         </div>
         <div class="flex flex-row mr-2">
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
-          <p><b>Java:</b> Lo he utilizado para la modificación de plugins de Minecraft.</p>
+          <p><b>PHP:</b> Mantengo y actualizo varias páginas web con WordPress y Laravel.</p>
         </div>
         <div class="flex flex-row mr-2">
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
-          <p><b>C++, PHP y Rust:</b> Los he utilizado puntualmente para distintos projectos.</p>
+          <p><b>C++, Java y Rust:</b> Los he utilizado puntualmente para distintos projectos.</p>
         </div>
       </div>
       <h3 class="text-lg font-bold text-red-700">Frameworks y Herramientas</h3>
@@ -48,41 +72,10 @@ defineProps<{
         </div>
         <div class="flex flex-row mr-2">
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
-          <p><b>DNS:</b> Tengo adquirido un dominio y lo llevo gestionando varios años.</p>
-        </div>
-        <div class="flex flex-row mr-2">
-          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
-          <p><b>SQL:</b> He trabajado varias veces con bases de datos SQL.</p>
-        </div>
-        <div class="flex flex-row mr-2">
-          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
           <p>
-            <b>WordPress:</b> He trabajado con WordPress en la página de la asociación
-            <a class="link link-hover" href="https://amatugr.es/">AMAT</a> y actualmente trabajo con
-            él en la página de la asociación
-            <a class="link link-hover" href="https://creup.es/">CREUP</a>.
-          </p>
-        </div>
-        <div class="flex flex-row mr-2">
-          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
-          <p>
-            <b>Google Workspace y Analytics:</b> He trabajado con Google Workspace en la asociación
-            <a class="link link-hover" href="https://amatugr.es/">AMAT</a> y en la
-            <a class="link link-hover" href="https://creup.es/">CREUP</a> y con las anlíticas de la
-            DEFC y la DGE.
-          </p>
-        </div>
-        <div class="flex flex-row mr-2">
-          <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
-          <p>
-            <b>Drupal:</b> Desde 2020 he mantenido las páginas web de la
-            <a class="link link-hover" href="https://defc.ugr.es/"
-              >Delegación de Estudiantes de la Facultad de Ciencias</a
-            >
-            y de la
-            <a class="link link-hover" href="https://dge.ugr.es/"
-              >Delegación General de Estudiantes</a
-            >.
+            <b>Dominios y Google Workspace:</b> Tengo adquirido un dominio y lo llevo gestionando
+            varios años. Además, gestiono otros dominios y su Google Workspace como el de la
+            asociación <a href="https://www.creup.es" class="link link-hover">CREUP</a>.
           </p>
         </div>
       </div>

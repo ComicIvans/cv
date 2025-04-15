@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card bg-base-100 shadow-xl" :class="showLarge ? 'w-[30rem]' : 'w-96'">
+  <div class="card bg-base-100 shadow-xl" :class="showLarge ? 'w-[30rem]' : 'w-[24rem]'">
     <div class="card-body">
       <h2 class="card-title flex flex-row items-center">
         <IconCertificate class="w-6 h-6 stroke-2 text-red-700" />Certificaciones
@@ -20,7 +20,7 @@ defineProps<{
         </div>
         <div class="flex flex-row mr-2">
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
-          <p><b>Inglés:</b> Nivel B2</p>
+          <p><b>Inglés:</b> Nivel B2, preparando el C1.</p>
         </div>
         <div class="flex flex-row mr-2">
           <IconChevronRight class="min-w-6 w-6 h-6 stroke-2 text-red-700" />
